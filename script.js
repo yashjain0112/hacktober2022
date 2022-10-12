@@ -1,30 +1,23 @@
-// This function clear all the values
-function clearScreen() {
-	document.getElementById("result").value = "";
+let outputScreen = document.getElementById("output-screen");
+
+function display(num){
+    outputScreen.value += num;
 }
 
-// This function display values
-function display(value) {
-	document.getElementById("result").value += value;
+function Calculate() {
+    try{
+        outputScreen.value = eval(outputScreen.value);
+    }
+
+    catch(err){
+        alert('invalid')
+    }
 }
 
-// This function evaluates the expression and returns result
-function calculate() {
-	var p = document.getElementById("result").value;
-	var q = eval(p);
-	document.getElementById("result").value = q;
+function Clear() {
+    outputScreen.value = '';
 }
 
-function clearScreen() {
-    document.getElementById("result").value = "";
-}
-
-function display(value) {
-	document.getElementById("result").value += value;
-}
-
-function calculate() {
-	var p = document.getElementById("result").value;
-	var q = eval(p);
-	document.getElementById("result").value = q;
+function del() {
+    outputScreen.value = outputScreen.value.slice(0, -1);
 }
