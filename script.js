@@ -14,3 +14,7 @@ function calculate() {
 	var q = eval(p);
 	document.getElementById("result").value = q;
 }
+
+function clearScreen() {
+    document.getElementById("result").value = "";
+}
