@@ -1,1 +1,2 @@
-# hacktober2022
+# Simple calculator 
+Made a web based calculator using HTML, CSS and Javascript!
