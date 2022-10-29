@@ -1,4 +1,4 @@
-// This function clear all the values
+// This function clear all the values from the screen
 function clearScreen() {
 	document.getElementById("result").value = "";
 }
